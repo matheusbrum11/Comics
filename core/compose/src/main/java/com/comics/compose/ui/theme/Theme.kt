@@ -28,16 +28,16 @@ private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
     tertiary = Pink80,
-    background = md_theme_light_background,
-    onBackground = md_theme_light_onBackground,
+    background = md_theme_dark_background,
+    onBackground = md_theme_dark_onBackground,
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,
     secondary = PurpleGrey40,
     tertiary = Pink40,
-    background = md_theme_dark_background,
-    onBackground = md_theme_dark_onBackground,
+    background = md_theme_light_background,
+    onBackground = md_theme_light_onBackground,
 )
 
 @Composable

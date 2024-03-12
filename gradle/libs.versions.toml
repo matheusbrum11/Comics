@@ -1,5 +1,7 @@
 [versions]
+accompanistSwiperefresh = "0.34.0"
 androidx-junit = "1.1.5"
+androidx-material = "1.6.3"
 appcompat = "1.6.1"
 constraintlayout = "2.1.4"
 core-ktx = "1.12.0"
@@ -24,8 +26,10 @@ github-compose = "1.0.0-beta01"
 agp = "8.0.1"
 org-jetbrains-kotlin-android = "1.8.10"
 okHttpVersion = "5.0.0-alpha.11"
+androidx-material3 = "1.2.1"
 
 [libraries]
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
@@ -37,6 +41,7 @@ androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensi
 androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle-viewmodel-ktx" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-viewmodel-ktx" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel-ktx" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "androidx-material" }
 androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
@@ -61,7 +66,7 @@ glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "g
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "androidx-material3" }
 [plugins]
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }

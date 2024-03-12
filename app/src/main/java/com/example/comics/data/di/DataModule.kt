@@ -25,12 +25,12 @@ private inline fun <reified T> createUnauthService(): T {
 }
 
 val servicesModule = module {
-    createUnauthService<ComicsService>()
+    single { createUnauthService<ComicsService>() }
 }
 
 val repositories = module {
-    single <ComicsRepository> { ComicsRepositoryImpl(get())}
+    single<ComicsRepository> { ComicsRepositoryImpl(get()) }
 }
 
-val dataModule = listOf(servicesModule,repositories)
+val dataModule = listOf(servicesModule, repositories)
 

@@ -4,5 +4,5 @@ import com.example.comics.data.model.ItemModel
 import kotlinx.coroutines.flow.Flow
 
 interface ComicsRepository {
-    suspend fun getComics(): Flow<List<ItemModel>>
+    suspend fun getComics(): Flow<ItemModel>
 }

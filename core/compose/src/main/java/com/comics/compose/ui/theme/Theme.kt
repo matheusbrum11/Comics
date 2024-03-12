@@ -28,14 +28,16 @@ private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
     tertiary = Pink80,
-    background = md_theme_light_background
+    background = md_theme_light_background,
+    onBackground = md_theme_light_onBackground,
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,
     secondary = PurpleGrey40,
     tertiary = Pink40,
-    background = md_theme_dark_background
+    background = md_theme_dark_background,
+    onBackground = md_theme_dark_onBackground,
 )
 
 @Composable
@@ -51,7 +53,7 @@ fun ComicsTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.primary.toArgb()
+            window.statusBarColor = colorScheme.background.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
